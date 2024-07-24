@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scholar's IT | Events page</title>
+
+    <!-- Custom Style Css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Custom Responsive Style Link -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div class="container wrapper">
+        <!-- Company Logo -->
+        <a href="" class="logo">
+          <img src="./images/color_logo.png" alt="" />
+        </a>
+
+        <!-- NavBar -->
+        <nav class="navbar">
+          <ul class="nav_links">
+            <!-- Mobile Logo -->
+            <div class="mobile_logo_box">
+              <a href="" class="mobile_logo">
+                <img src="./images/color_logo.png" alt="" />
+              </a>
+
+              <img
+                src="./images/cross.png"
+                alt="Cross Icon"
+                class="cross_icon"
+                id="cross_icon"
+              />
+            </div>
+
+            <li class="nav_item">
+              <a href="./index.html" class="link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="./courses.html" class="link">Course</a>
+            </li>
+            <li class="nav_item">
+              <a href="./events.html" class="link active">Events</a>
+            </li>
+            <li class="nav_item"><a href="#" class="link">Community</a></li>
+            <li class="nav_item"><a href="#" class="link">About Us</a></li>
+            <li class="nav_item"><a href="#" class="link">Admission</a></li>
+          </ul>
+
+          <!-- Nav Buttons -->
+          <div class="nav_buttons">
+            <!-- Language Button -->
+            <button class="btn btn_transparent">en/bn</button>
+
+            <!-- Login Button -->
+            <button class="btn btn_login">Login</button>
+          </div>
+
+          <!-- Hamburger Icon -->
+          <div>
+            <img src="./images/menu.png" class="menu_icon" id="menu_icon" />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="main">
+      <!-- Event Hero Start -->
+      <section class="hero event_hero">
+        <div class="container">
+          <!-- Event Content -->
+          <div class="event_content">
+            <!-- Heading -->
+            <div>
+              <h2 class="heading">World</h2>
+              <h2 class="heading">Digital conference</h2>
+            </div>
+
+            <!-- Event Location and Date -->
+            <div class="location">
+              <div class="location_box">
+                <img src="./images/map.png" alt="Map" />
+                <p class="title">Malibagh, Dhaka</p>
+              </div>
+
+              <div class="location_box">
+                <img src="./images/calendar.png" alt="Map" />
+                <p class="title">April 15 to 20, 2025</p>
+              </div>
+            </div>
+
+            <!-- Count Down -->
+            <div class="count_down">
+              <div>
+                <span class="time" id="days">00</span>
+                <span class="title">D</span>
+              </div>
+
+              <span class="dot">:</span>
+
+              <div>
+                <span class="time" id="hours">00</span>
+                <span class="title">H</span>
+              </div>
+
+              <span class="dot">:</span>
+
+              <div>
+                <span class="time" id="minutes">00</span>
+                <span class="title">M</span>
+              </div>
+
+              <span class="dot">:</span>
+
+              <div>
+                <span class="time" id="seconds">00</span>
+                <span class="title">S</span>
+              </div>
+            </div>
+
+            <div class="event_close"></div>
+
+            <!-- Book Ticket Button -->
+            <div class="button_box">
+              <button class="btn btn_white">Book ticket</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Event Hero End -->
+
+      <!-- Searching Event Start -->
+      <section class="searching_event">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="searching_container">
+                <div class="searching_header">
+                  <h2 class="heading">Events happening in your city</h2>
+                </div>
+
+                <!-- Search item -->
+                <div class="wrapper">
+                  <div class="search_item">
+                    <div class="search_box">
+                      <h4 class="text">Search by category</h4>
+                    </div>
+                    <div class="search_box">
+                      <select name="all_date" id="">
+                        <option value="all">Select City</option>
+                        <option value="option1">option1</option>
+                        <option value="option2">option2</option>
+                        <option value="option3">option3</option>
+                        <option value="option4">option4</option>
+                      </select>
+                    </div>
+                    <div class="search_box">
+                      <select name="all_date" id="">
+                        <option value="all">All Date</option>
+                        <option value="option1">option1</option>
+                        <option value="option2">option2</option>
+                        <option value="option3">option3</option>
+                        <option value="option4">option4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="search_icon">
+                    <img src="./images/search_white.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Searching Event End -->
+
+      <!-- Event's Category Start -->
+      <section class="event_category">
+        <div class="container">
+          <div>
+            <h2 class="heading">Event's Category</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              pariatur non magni suscipit dolor perferendis?
+            </p>
+          </div>
+
+          <!-- Category -->
+          <div class="wrapper">
+            <a href="" class="category_box">
+              <div class="img_box">
+                <img src="./images/skill-development.png" alt="" />
+              </div>
+              <h2 class="title">Grow Skills</h2>
+              <p class="description">Lorem ipsum dolor sit amet.</p>
+            </a>
+
+            <a href="" class="category_box">
+              <div class="img_box">
+                <img src="./images/promotion.png" alt="" />
+              </div>
+              <h2 class="title">Promotion</h2>
+              <p class="description">Lorem ipsum dolor sit amet.</p>
+            </a>
+
+            <a href="" class="category_box">
+              <div class="img_box">
+                <img src="./images/achievement.png" alt="" />
+              </div>
+              <h2 class="title">Career Goal</h2>
+              <p class="description">Lorem ipsum dolor sit amet.</p>
+            </a>
+
+            <a href="" class="category_box">
+              <div class="img_box">
+                <img src="./images/lunch.png" alt="" />
+              </div>
+              <h2 class="title">Buffet Lunch</h2>
+              <p class="description">Lorem ipsum dolor sit amet.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Event's Category End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="wrapper">
+          <div>
+            <div class="footer_logo">
+              <a href="">
+                <img src="./images/white_logo.png" alt="" class="logo" />
+              </a>
+            </div>
+
+            <!-- Company Details -->
+            <div class="company_details">
+              <div class="location">
+                <img class="footer_icon" src="./images/map.png" alt="Map" />
+                <p>
+                  Feroza Tower, 8th Floor, DIT Road, Malibagh Chowdhurypara,
+                  Dhaka.
+                </p>
+              </div>
+
+              <div class="location">
+                <img class="footer_icon" src="./images/map.png" alt="Map" />
+                <p>+880 161031-8315</p>
+              </div>
+
+              <div class="location">
+                <img class="footer_icon" src="./images/map.png" alt="Map" />
+
+                <p>modelcomputer.net@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer_item">
+            <h3 class="footer_header">quick Link</h3>
+
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms & condition</a></li>
+              <li><a href="#">Community standart</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms & condition</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_item">
+            <h3 class="footer_header">our courses</h3>
+
+            <ul>
+              <li><a href="#">Digital marketing</a></li>
+              <li><a href="#">Graphics Design</a></li>
+              <li><a href="#">Web design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Digital marketing</a></li>
+              <li><a href="#">Graphics Design</a></li>
+              <li><a href="#">Web design</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_item">
+            <h3 class="footer_header">Get Started</h3>
+
+            <ul>
+              <li><a href="#">Join free seminar</a></li>
+              <li><a href="#">join events</a></li>
+              <li><a href="#">community</a></li>
+              <li><a href="#">Admission</a></li>
+            </ul>
+
+            <h3 class="footer_header follow">Follow Us</h3>
+
+            <div class="icon_wrapper">
+              <div class="icon">F</div>
+              <div class="icon">L</div>
+              <div class="icon">I</div>
+              <div class="icon">T</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <div class="container">
+          <p class="text">
+            Copyright &copy; <span id="copyright_year"></span> Scholar's IT ||
+            All Right Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Custom Js Link -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
