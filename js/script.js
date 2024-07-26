@@ -64,7 +64,7 @@ const second = document.querySelector("#seconds"),
   hour = document.querySelector("#hours"),
   day = document.querySelector("#days");
 
-const countDownDate = new Date("Jul 25, 2024 0:00:00").getTime();
+const countDownDate = new Date("Jul 25 2024 0:00:00").getTime();
 
 const timeFunction = setInterval(() => {
   // Get the current date and time
