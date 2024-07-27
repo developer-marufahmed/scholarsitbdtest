@@ -21,9 +21,48 @@
     font-weight: 700;
   }
 
+  /* Event Category */
   .event_category .wrapper {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 10px;
+  }
+
+  /* Upcoming Events */
+  .upcoming_events .upcoming_box .banner_img_box {
+    height: 200px;
+  }
+
+  .upcoming_events .upcoming_details {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .upcoming_events .interested_details {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .upcoming_events .upcoming_details .details_box,
+  .upcoming_events .interested_details .details_box {
+    flex-direction: row;
+    align-items: start;
+    text-align: start;
+  }
+
+  .upcoming_events .upcoming_details .details_box img,
+  .upcoming_events .interested_details .details_box img {
+    margin: 0;
+  }
+
+  /* Experts */
+  .experts .wrapper {
+    padding: 0 40px;
+  }
+
+  .experts .experts_box .profile_details .name {
+    font-size: 25px;
+  }
+
+  .experts .experts_box .profile_details .skills {
+    font-size: 16px;
   }
 }
 
@@ -238,8 +277,20 @@
     margin-left: 5px;
   }
 
+  /* Searching Event */
+  .searching_event .searching_container .heading {
+    font-size: 25px;
+  }
+
+  /* Event Category */
   .event_category .wrapper {
     padding: 0 40px;
+  }
+
+  /* Experts */
+  .experts .wrapper {
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -389,9 +440,39 @@
     font-weight: 800;
   }
 
+  /* Searching Event */
+  .searching_event .searching_container .wrapper {
+    flex-direction: row;
+  }
+
+  .searching_event .searching_container .heading {
+    font-size: 28px;
+    text-align: start;
+  }
+
+  /* Event Category */
   .event_category .wrapper {
     grid-template-columns: repeat(3, 1fr);
     padding: 0 20px;
+  }
+
+  /* Upcoming Events */
+  .upcoming_events .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .upcoming_events .upcoming_box .banner_img_box {
+    height: 170px;
+  }
+
+  .upcoming_events .upcoming_details,
+  .upcoming_events .interested_details {
+    padding: 20px;
+  }
+
+  /* Experts */
+  .experts .wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -608,9 +689,66 @@
     margin-left: 5px;
   }
 
+  /* Searching Event */
+  .searching_event .searching_container {
+    padding: 20px 40px 60px;
+  }
+
+  .searching_event .searching_container .wrapper {
+    gap: 0;
+  }
+
+  .searching_event .searching_container .search_item {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 3px solid var(--border-color);
+    border-right: 0;
+  }
+
+  .searching_event .searching_container .search_box {
+    background-color: var(--white-color);
+    border-right: 2px solid var(--border-color);
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  .searching_event .searching_container .search_box.box-1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .searching_event .searching_container .search_box select {
+    background-color: white;
+    text-align: start;
+  }
+
+  .searching_event .searching_container .search_icon {
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    padding: 19.5px;
+  }
+
+  /* Event Category */
   .event_category .wrapper {
     grid-template-columns: repeat(4, 1fr);
     padding: 0;
+  }
+
+  .upcoming_events .upcoming_box .banner_img_box {
+    height: 220px;
+  }
+
+  /* Experts */
+  .experts .wrapper {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
