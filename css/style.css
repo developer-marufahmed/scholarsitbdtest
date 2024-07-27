@@ -247,6 +247,7 @@ input {
           /* Link */
           .link {
             color: #363636;
+            text-transform: capitalize;
 
             &.active {
               color: var(--primary-color);
