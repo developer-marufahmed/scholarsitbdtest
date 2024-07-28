@@ -64,6 +64,19 @@
   .experts .experts_box .profile_details .skills {
     font-size: 16px;
   }
+
+  /* Community */
+  .community_hero .community_content {
+    padding: 50px 0;
+  }
+
+  .community_hero .community_content .heading {
+    font-size: 28px;
+  }
+
+  .community_hero .community_content .description {
+    font-size: 18px;
+  }
 }
 
 /** Media Responsiveness min-width: 560px */
@@ -292,6 +305,19 @@
     padding: 0;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Community */
+  .community_hero {
+    margin-top: 85px;
+  }
+
+  .community_hero .community_content .heading {
+    font-size: 34px;
+  }
+
+  .community_hero .connected-people span {
+    font-size: 2.5rem;
+  }
 }
 
 /** Media Responsiveness min-width: 768px */
@@ -473,6 +499,28 @@
   /* Experts */
   .experts .wrapper {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Community */
+  .community_hero .wrapper {
+    flex-direction: row;
+  }
+
+  .community_hero .community_content .heading {
+    text-align: start;
+    font-size: 36px;
+  }
+
+  .community_hero .community_content .description {
+    text-align: start;
+  }
+
+  .community_hero .community_content {
+    width: 80%;
+  }
+
+  .community_hero .connected-people {
+    text-align: start;
   }
 }
 
@@ -749,6 +797,20 @@
   /* Experts */
   .experts .wrapper {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Community page */
+.community_hero .wrapper{
+  height: 45vh;
+}
+
+  .community_hero .community_content {
+    width: 50%;
+  }
+
+  .community_hero .background_image {
+    display: block;
+    width: 50%;
   }
 }
 
