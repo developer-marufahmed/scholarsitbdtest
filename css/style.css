@@ -1883,12 +1883,12 @@ input {
 .news_feed_section .news_feed .feed_box .author_info {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .news_feed_section .news_feed .feed_box .author_info .author_profile {
-  width: 55px;
-  height: 55px;
+  width: 44px;
+  height: 44px;
   overflow: hidden;
   border-radius: 500px;
   border: 2px solid var(--primary-color);
@@ -1907,7 +1907,7 @@ input {
 }
 
 .news_feed_section .news_feed .feed_box .author_info .author_details .name {
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -1919,14 +1919,14 @@ input {
   .timestamp {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .news_feed_section .news_feed .feed_box .author_info .author_details .privacy {
   display: flex;
   align-items: center;
-  gap: 7px;
-  font-size: 14px;
+  gap: 5px;
+  font-size: 12px;
   color: #7c7c7c;
 }
 
@@ -1936,6 +1936,59 @@ input {
   gap: 7px;
   font-size: 14px;
   color: #7c7c7c;
+}
+
+/* News feed content */
+.news_feed_section .news_feed .feed_box .content_box {
+  padding: 20px 0;
+}
+
+.news_feed_section .news_feed .feed_box .content_box img {
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+}
+
+/* Engagement */
+.news_feed_section .news_feed .feed_box .engagements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  color: var(--des-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.news_feed_section .news_feed .feed_box .engagements .reactions_icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.news_feed_section .news_feed .feed_box .engagements .engagement_span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.news_feed_section .news_feed .feed_box .reactions {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-top: 10px;
+  color: var(--des-color);
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 13px;
+  }
 }
 
 /* Sidebar */
@@ -1951,10 +2004,4 @@ input {
   background-color: var(--white-color);
   border-radius: 10px;
   overflow: hidden;
-}
-
-/* News feed content */
-.news_feed_section .news_feed .feed_box .content_box{
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border-color);
 }
