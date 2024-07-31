@@ -84,6 +84,43 @@
       width: 100%;
     }
   }
+
+  /* sidebar */
+  .news_feed_section .sidebar .sidebar_box .details {
+    .details_item {
+      font-size: 16px;
+
+      span {
+        text-align: center;
+        display: inline-block;
+      }
+    }
+  }
+
+  .news_feed_section .sidebar .sidebar_box .contents .comment_box .thumbnail {
+    width: 95px;
+    height: 80px;
+  }
+
+  .news_feed_section
+    .sidebar
+    .sidebar_box
+    .contents
+    .comment_box
+    .comment_details
+    .date {
+    font-size: 14px;
+  }
+
+  .news_feed_section
+    .sidebar
+    .sidebar_box
+    .contents
+    .comment_box
+    .comment_details
+    .comment_title {
+    font-size: 18px;
+  }
 }
 
 /** Media Responsiveness min-width: 560px */
@@ -571,11 +608,11 @@
     text-align: start;
   }
 
-  .community_tab .tabs{
+  .community_tab .tabs {
     height: 90px;
   }
 
-  .community_tab .tabs ul li{
+  .community_tab .tabs ul li {
     font-size: 18px;
   }
 
@@ -899,6 +936,31 @@
   .news_feed_section .sidebar {
     width: 33%;
   }
+
+  .news_feed_section .sidebar .sidebar_box .contents .comment_box .thumbnail {
+    width: 90px;
+    height: 60px;
+  }
+
+  .news_feed_section
+    .sidebar
+    .sidebar_box
+    .contents
+    .comment_box
+    .comment_details
+    .date {
+    font-size: 12px;
+  }
+
+  .news_feed_section
+    .sidebar
+    .sidebar_box
+    .contents
+    .comment_box
+    .comment_details
+    .comment_title {
+    font-size: 14px;
+  }
 }
 
 /** Media Responsiveness min-width: 1280px */
@@ -953,5 +1015,30 @@
 
   .event_hero .event_content .count_down .time {
     font-size: 70px;
+  }
+
+  .news_feed_section .sidebar .sidebar_box .contents .comment_box .thumbnail {
+    width: 95px;
+    height: 80px;
+  }
+
+  .news_feed_section
+    .sidebar
+    .sidebar_box
+    .contents
+    .comment_box
+    .comment_details
+    .date {
+    font-size: 14px;
+  }
+
+  .news_feed_section
+    .sidebar
+    .sidebar_box
+    .contents
+    .comment_box
+    .comment_details
+    .comment_title {
+    font-size: 18px;
   }
 }
