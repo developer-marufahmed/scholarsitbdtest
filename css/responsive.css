@@ -121,6 +121,14 @@
     .comment_title {
     font-size: 18px;
   }
+
+  /* 
+--------------------------------------
+---------- About Page Style ----------
+*/
+  .about_hero .about_content .wrapper .location span {
+    font-size: 16px;
+  }
 }
 
 /** Media Responsiveness min-width: 560px */
@@ -403,6 +411,40 @@
   .news_feed_section .sidebar {
     margin-top: 0;
   }
+
+  /* 
+--------------------------------------
+---------- About Page Style ----------
+*/
+  .about_hero {
+    padding: 180px 0 60px;
+  }
+
+  .about_hero .about_content .wrapper .location span {
+    font-size: 18px;
+  }
+
+  /* About page style */
+
+  .about_details {
+    padding: 90px 0;
+  }
+
+  .about_details .wrapper .mission_vision_box .img_box {
+    padding: 20px;
+  }
+
+  .about_details .wrapper .mission_vision_box .details_para {
+    padding: 20px;
+  }
+
+  .about_details .wrapper .mission_vision_box .details_para .title {
+    font-size: 20px;
+  }
+
+  .about_details .wrapper .mission_vision_box .details_para .paragraph {
+    font-size: 16px;
+  }
 }
 
 /** Media Responsiveness min-width: 768px */
@@ -623,6 +665,24 @@
 
   .news_feed_section .news_feed .feed_box .author_info .author_details .name {
     font-size: 22px;
+  }
+
+  /* 
+--------------------------------------
+---------- About Page Style ----------
+*/
+
+  .about_hero .about_content .heading {
+    text-align: start;
+  }
+
+  .about_hero .about_content .description {
+    text-align: start;
+    margin: 0;
+  }
+
+  .about_hero .about_content .wrapper {
+    flex-direction: row;
   }
 }
 
@@ -960,6 +1020,19 @@
     .comment_details
     .comment_title {
     font-size: 14px;
+  }
+
+  /* 
+--------------------------------------
+---------- About Page Style ----------
+*/
+  .about_hero .about_content {
+    margin-left: 100px;
+    text-align: start;
+  }
+
+  .about_details .wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
