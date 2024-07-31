@@ -445,6 +445,14 @@
   .about_details .wrapper .mission_vision_box .details_para .paragraph {
     font-size: 16px;
   }
+
+  .why_best .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why_best .map_box .map iframe{
+    height: 450px;
+  }
 }
 
 /** Media Responsiveness min-width: 768px */
@@ -1032,6 +1040,11 @@
   }
 
   .about_details .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* About Success */
+  .about_success .wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }

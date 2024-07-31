@@ -2066,7 +2066,7 @@ input {
 }
 
 .news_feed_section .sidebar .sidebar_box .contents .description {
-  width: 100%;
+  max-width: 100%;
   margin: 0;
   text-align: start;
   color: var(--des-color);
@@ -2310,7 +2310,7 @@ input {
   overflow: hidden;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   }
@@ -2322,6 +2322,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 
   img {
     width: 400px;
@@ -2346,4 +2347,90 @@ input {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   overflow: hidden;
+}
+
+/* About Success */
+.about_success {
+  padding: 20px 0;
+  padding-bottom: 50px;
+  background-color: var(--bg-color);
+}
+
+.about_success .wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+.about_success .about_left .heading {
+  text-align: start;
+}
+
+.about_success .about_left .description {
+  text-align: justify;
+  margin: 0;
+  max-width: 100%;
+}
+
+.about_success .about_img img {
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Why Best */
+.why_best {
+  padding: 70px 0;
+}
+
+.why_best .wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 40px;
+  gap: 20px;
+  place-items: center;
+}
+
+.why_best .some_info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.why_best .some_info img {
+  width: 25px;
+}
+
+.why_best .some_info p {
+  color: var(--des-color);
+}
+
+.why_best .map_box{
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.why_best .map_box .map{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  overflow: hidden;
+  max-height: 850px;
+  height: 100%;
+}
+
+.why_best .map_box .map iframe{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* Our Professional Team */
+.professional_team{
+  background-color: var(--bg-color);
 }
