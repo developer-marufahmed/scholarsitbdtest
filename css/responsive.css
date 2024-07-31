@@ -571,6 +571,14 @@
     text-align: start;
   }
 
+  .community_tab .tabs{
+    height: 90px;
+  }
+
+  .community_tab .tabs ul li{
+    font-size: 18px;
+  }
+
   .news_feed_section .news_feed .feed_box .author_info .author_profile {
     width: 55px;
     height: 55px;
