@@ -84,6 +84,9 @@ img {
     background-color: var(--primary-color);
     color: var(--white-color);
   }
+  &.active:hover {
+    background-color: var(--primary-hover-color);
+  }
 }
 
 .btn_white {
@@ -94,6 +97,24 @@ img {
 
   &:hover {
     background-color: var(--bg-color);
+  }
+
+  &.active:hover {
+    background-color: var(--primary-hover-color);
+  }
+}
+
+.btn_bg_white {
+  background-color: var(--white-color) !important;
+  color: var(--secondary-color) !important;
+
+  &.active {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+  }
+
+  &.active:hover {
+    background-color: var(--primary-hover-color) !important;
   }
 }
 
@@ -492,13 +513,13 @@ input {
 }
 
 .slider .slider_box {
-  max-width: 360px;
+  max-width: 365px;
   width: 100%;
   background-color: var(--white-color);
   border-radius: 10px;
   overflow: hidden;
   /* box-shadow: 0 10px 20px rgba(38, 40, 64, 0.2); */
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
   transition: all 0.4s;
 }
 
@@ -2407,7 +2428,7 @@ input {
   color: var(--des-color);
 }
 
-.why_best .map_box{
+.why_best .map_box {
   padding: 10px 15px;
   background-color: var(--primary-color);
   border-radius: 12px;
@@ -2415,7 +2436,7 @@ input {
   margin-top: 70px;
 }
 
-.why_best .map_box .map{
+.why_best .map_box .map {
   padding: 5px;
   border-radius: 10px;
   background-color: var(--white-color);
@@ -2424,13 +2445,241 @@ input {
   height: 100%;
 }
 
-.why_best .map_box .map iframe{
+.why_best .map_box .map iframe {
   width: 100%;
   height: 200px;
   border-radius: 10px;
 }
 
 /* Our Professional Team */
-.professional_team{
+.professional_team {
+  background-color: var(--bg-color);
+}
+
+/* ---------------------------
+------- Admission page -------
+*/
+
+.success_step {
+  padding: 90px 0;
+}
+
+/* Admission Form */
+.admission_form {
+  padding: 50px 0;
+  background-color: var(--bg-color);
+}
+
+.admission_form .wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.admission_form .admission_product {
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 0;
+}
+
+.admission_form .some_info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.admission_form .some_info .info_box {
+  padding: 25px;
+  background-color: var(--white-color);
+  width: 100%;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admission_form .some_info .info_box .title_box {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.admission_form .some_info .info_box .details h4 {
+  margin-bottom: 8px;
+}
+
+.admission_form .some_info .info_box .details .location {
+  margin-bottom: 20px;
+}
+
+.admission_form .some_info .info_box .details .instructor {
+  margin-top: 20px;
+}
+
+.admission_form .some_info .info_box .details span {
+  color: var(--des-color);
+  margin-top: 5px;
+  display: block;
+}
+
+.admission_form .some_info .info_box .details p {
+  color: var(--des-color);
+  margin-top: 5px;
+}
+
+/* Form Info */
+.admission_form .form_info {
+  width: 100%;
+}
+
+.admission_form .form_info .title_box {
+  padding: 10px 20px;
+  background-color: var(--bg-color-darken);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admission_form .form_info .title_box .title {
+  font-size: 16px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.admission_form .form_info .title_box .serial {
+  width: 30px;
+  height: 30px;
+  background-color: var(--des-color);
+  color: var(--white-color);
+  font-size: 14px;
+  border-radius: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admission_form .form_info .form_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.admission_form .form_info .form_inputs .form_row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-bottom: 15px; */
+  gap: 10px;
+}
+
+.admission_form .form_info .form_inputs .form_row input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--des-color);
+}
+
+.admission_form .form_info .form_inputs .form_row .note::placeholder {
+  color: var(--primary-color);
+}
+
+.admission_form .form_info .form_inputs .form_row.margin_input {
+  margin-top: 40px;
+}
+
+.admission_form .form_info .form_inputs .form_row select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  outline: none;
+  border-radius: 4px;
+  background-color: var(--white-color);
+  color: var(--des-color);
+  position: relative;
+}
+
+.admission_form .form_info .btn_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.admission_form .form_info .btn_box.proceed_btn {
+  justify-content: start;
+  padding-top: 0;
+}
+
+/* Testimonial */
+.testimonial {
+  padding: 50px 0;
+  background-color: var(--white-color);
+}
+
+.testimonial .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.testimonial .testimonial_author {
+  width: 100px;
+  height: 100px;
+  border-radius: 500px;
+  border: 2px solid var(--primary-color);
+  overflow: hidden;
+}
+
+.testimonial .testimonial_author img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial .details {
+  max-width: 800px;
+}
+
+.testimonial .details p {
+  font-size: 14px;
+  text-align: center;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.testimonial .details h3 {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.testimonial .details h3 span {
+  font-size: 14px;
+  color: var(--des-color);
+  font-weight: normal;
+}
+
+/* Space */
+.space {
+  padding: 60px 0;
   background-color: var(--bg-color);
 }

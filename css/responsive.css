@@ -450,8 +450,17 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .why_best .map_box .map iframe{
+  .why_best .map_box .map iframe {
     height: 450px;
+  }
+
+  /* Admission Form */
+  .admission_form .form_info .form_inputs .form_row {
+    flex-direction: row;
+  }
+
+  .admission_form .form_info .form_inputs .form_row.margin_input {
+    margin-top: 0;
   }
 }
 
@@ -691,6 +700,27 @@
 
   .about_hero .about_content .wrapper {
     flex-direction: row;
+  }
+
+  /* Admission From */
+  .admission_form .wrapper {
+    flex-direction: row;
+  }
+
+  .admission_form .some_info {
+    width: 50%;
+  }
+
+  .admission_form .form_info {
+    width: 50%;
+  }
+
+  .admission_form .form_info .form_inputs .form_row {
+    flex-direction: column;
+  }
+
+  .admission_form .form_info .form_inputs .form_row.margin_input {
+    margin-top: 40px;
   }
 }
 
@@ -1046,6 +1076,41 @@
   /* About Success */
   .about_success .wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Admission From */
+  .admission_form .wrapper {
+    flex-direction: row;
+  }
+
+  .admission_form .some_info {
+    width: 33%;
+  }
+
+  .admission_form .form_info {
+    width: 67%;
+  }
+
+  .admission_form .form_info .form_inputs .form_row {
+    flex-direction: row;
+  }
+
+  .admission_form .form_info .form_inputs .form_row.margin_input {
+    margin-top: 0;
+  }
+
+  /* Testimonial */
+  .testimonial .wrapper {
+    flex-direction: row;
+  }
+
+  .testimonial .details p {
+    font-size: 18px;
+  }
+
+  .testimonial .details h3 {
+    text-align: start;
+    font-size: 22px;
   }
 }
 
